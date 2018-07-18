@@ -127,7 +127,7 @@ h3
     font-family: Verdana, sans-serif;
     color: #888;
 }
-.video 
+.videoCategory 
 {
     width: 100%;
     height: 100%;
@@ -221,7 +221,7 @@ h3
     width: 100vw;
     margin: 0 0 6.25em 0;
     background-image: url("../video/FilmStrip.png"); 
-    background-position: center;
+    background-position: center-y;
     background-repeat: repeat-x;
     /* background-size: cover; */
     background-size: auto 100%;
@@ -234,9 +234,26 @@ h3
 }
 .videoScroll
 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
     box-sizing: border-box;
     overflow: hidden;
     background-color: darkslategray;
+}
+.video
+{
+/* RESIZE - mobile */
+    box-sizing: border-box;
+
+    height: 70%;
+    width: 164px;
+    margin: 30px 5px;
+    padding: 0;
+
+    border: 1px solid red;
+    background-color: rgb(156, 220, 236);
 }
 .previousButton, .nextButton
 {
@@ -267,7 +284,6 @@ h3
 {
     border-left: 5em solid rgba(255, 255, 255, 1);
 }
-
 
 
 
@@ -360,9 +376,10 @@ h3
     }
     .categories
     {
+        font-size: 2em;
         margin: 2em .5em 1em;
     }
-    .video 
+    .videoCategory 
     {
         cursor: pointer;
         max-width: 90%;
@@ -370,8 +387,8 @@ h3
     .gutter
     {
         height: fit-content;
-        max-width: 25%;
-        margin: 1.25em auto;
+        max-width: 20%;
+        margin: 1.25em;
     }
     .gutter-header
     {
@@ -421,6 +438,15 @@ h3
     }
     .videoScroll
     {
+
+    }
+    .video
+    {
+
+        height: 70%;
+        width: 164px;
+        margin: 30px 5px;
+        padding: 0;
 
     }
     .previousButton, .nextButton

@@ -79,6 +79,9 @@ $(window).scroll(function() {
 
 // Create Video array of divs on page
 
+// create # of vids to display based on screen size
+    // on resize, add/remove if neccessary
+
 // Scroll through array onClick prev/next button
 
 // Change video array shown for each category clicked
