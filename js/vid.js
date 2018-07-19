@@ -86,3 +86,26 @@ $(window).scroll(function() {
 
 // Change video array shown for each category clicked
 
+
+
+var filmReelContainer = $("#filmReel");
+var vid = $(".video").width();
+
+var windowWidth = $(window).width();
+var vidAmount;
+
+if (windowWidth < 1080)
+{
+    vidAmount = Math.ceil(windowWidth / vid);
+} else 
+{
+    vidAmount = Math.floor(windowWidth / vid);
+}
+
+for (i = 1; i < vidAmount; i++)
+{
+    var div = $("<div>");
+    div.addClass("video");
+    filmReelContainer.append(div);
+}
+

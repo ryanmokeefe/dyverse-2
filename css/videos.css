@@ -248,12 +248,15 @@ h3
     box-sizing: border-box;
 
     height: 70%;
-    width: 164px;
-    margin: 30px 5px;
+    width: 282px;
+    margin: 30px 7px;
     padding: 0;
-
     border: 1px solid red;
     background-color: rgb(156, 220, 236);
+}
+.initVid
+{
+    display: none;
 }
 .previousButton, .nextButton
 {
