@@ -88,24 +88,34 @@ $(window).scroll(function() {
 
 
 
-var filmReelContainer = $("#filmReel");
-var vid = $(".video").width();
+function createVidDivs() {
 
-var windowWidth = $(window).width();
-var vidAmount;
+    var filmReelContainer = $("#filmReel");
+    var vid = $(".video").width();
+    
+    // var windowWidth = $(window).width();
 
-if (windowWidth < 1080)
-{
-    vidAmount = Math.ceil(windowWidth / vid);
-} else 
-{
-    vidAmount = Math.floor(windowWidth / vid);
+    var vidAmount;
+
+    if ($(window).width() < 1080)
+    {
+        vidAmount = Math.ceil($(window).width() / vid);
+    } else 
+    {
+        vidAmount = Math.floor($(window).width() / vid);
+    }
+
+    for (i = 1; i < vidAmount; i++)
+    {
+        var div = $("<div>");
+        div.addClass("video");
+        filmReelContainer.append(div);
+    }
+
 }
 
-for (i = 1; i < vidAmount; i++)
-{
-    var div = $("<div>");
-    div.addClass("video");
-    filmReelContainer.append(div);
-}
+// createVidDivs();
 
+// $(window).resize(function() {
+//     createVidDivs();
+// });
