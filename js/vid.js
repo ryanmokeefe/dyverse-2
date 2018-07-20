@@ -77,7 +77,7 @@ $(window).scroll(function() {
 
 
 
-// Create Video array of divs on page
+// Create array of vids on page
 
 // create # of vids to display based on screen size
     // on resize, add/remove if neccessary
@@ -86,23 +86,27 @@ $(window).scroll(function() {
 
 // Change video array shown for each category clicked
 
+var vids = {
+    commercials: [],
+    film: [],
 
+}
 
-function createVidDivs() {
+function createVids() {
 
     var filmReelContainer = $("#filmReel");
     var vid = $(".video").width();
     
-    // var windowWidth = $(window).width();
+    var windowWidth = $(window).width();
 
     var vidAmount;
 
-    if ($(window).width() < 1080)
+    if (windowWidth < 1080)
     {
-        vidAmount = Math.ceil($(window).width() / vid);
+        vidAmount = Math.ceil(windowWidth / vid);
     } else 
     {
-        vidAmount = Math.floor($(window).width() / vid);
+        vidAmount = Math.floor(windowWidth / vid);
     }
 
     for (i = 1; i < vidAmount; i++)
@@ -119,3 +123,5 @@ function createVidDivs() {
 // $(window).resize(function() {
 //     createVidDivs();
 // });
+
+

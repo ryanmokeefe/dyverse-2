@@ -217,21 +217,14 @@ h3
     z-index: 2;
     position: fixed;
     top: 12em;
-    /* height: 17em; */
     width: 100vw;
     margin: 0;
     padding: 0;
-    /* background-image: url("../video/FilmStrip.png"); 
-    background-position: center-y;
-    background-repeat: repeat-x; */
-    /* background-size: cover; */
-    /* background-size: auto 100%; */
 }
 .fixedReel
 {
     position: fixed;
     top: 12em;
-    /* background-color: cadetblue; */
 }
 .videoScroll
 {
@@ -241,7 +234,6 @@ h3
     justify-content: left;
     box-sizing: border-box;
     overflow: hidden;
-    /* background-color: darkslategray; */
     background-color: rgba(255, 255, 255, .3);
 }
 .initVid
@@ -250,33 +242,27 @@ h3
 }
 .video
 {
-/* RESIZE - mobile */
     box-sizing: border-box;
-
-    height: 70%;
-    width: 282px;
-    margin: 30px 7px;
+    height: 100%;
+    margin: 0;
     padding: 0;
     border: 1px solid red;
-    background-color: rgb(156, 220, 236);
+    background-color: rgba(255, 255, 255, .5);
 }
-
-
-
-.test1
+.filmStripContainer
 {
     z-index: 3;
     background-color: transparent;
     border-style: solid;
     border-color: black;
-    border-width: 14px 4px;
+    border-width: 14px 0;
     padding: 0;
     margin: 0;
     height: fill;
     width: 100%;
 
 }
-.dashedTest
+.filmStripDashed
 {
     z-index: 3;
 
@@ -287,10 +273,16 @@ h3
     padding: 0;
     margin: 0;
 }
-.test3
+.vidContainer
 {
     z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
+
+    box-sizing: border-box;
     background-color: black;
     border-style: solid;
     border-color: black;
@@ -301,11 +293,11 @@ h3
     padding: 0;
     margin: 0;
 }
-
-
-
 .previousButton, .nextButton
 {
+    position: absolute;
+    z-index: 5;
+    top: 0;
     height: 0;
     width: 0;
     margin-top: 3.5em; 
@@ -315,6 +307,7 @@ h3
 .previousButton
 {
     margin-left: 2em;
+    left: 0;
     border-right: 5em solid rgba(255, 255, 255, .7);
 }
 .previousButton:hover
@@ -323,9 +316,7 @@ h3
 }
 .nextButton
 {
-    position: absolute;
     margin-right: 2em;
-    top: 0;
     right: 0;
     border-left: 5em solid rgba(255, 255, 255, .7);
 }
@@ -489,48 +480,24 @@ h3
     }
     .video
     {
-
-        height: 70%;
-        width: 164px;
-        margin: 30px 5px;
+        width: auto;
+        margin: 0 auto;
         padding: 0;
-
     }
-
-    .test1
+    .filmStripDashed
     {
-        height: 8.5em;
         margin: 0;
         padding: 0;
-        border-width: 14px 0 20px;
-
-
-        background-color: green;
-        border-color: yellow;
-
+        border-width: 10px 0;
     }
-
-    .dashedTest
-    {
-        height: 90%;
-        margin: 0;
-        padding: 0;
-
-        background-color: blue;
-
-    }
-    .test3
+    .vidContainer
     {
         width: 100%;
-        height: 100%;
+        height: 8em;
         margin: 0;
         padding: 0;
 
-        background-color: blueviolet;
-
     }
-
-
     .previousButton, .nextButton
     {
         margin-top: 1.25em; 
