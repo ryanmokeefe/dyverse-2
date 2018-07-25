@@ -7,7 +7,7 @@
   opacity: 0.9;
 }
 body.design {
-  background-image: url("../img/pencil-yellow.jpg");
+  background-image: url("../img/nightsky.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 25% 13%;
@@ -30,7 +30,7 @@ body.design {
 .design__heading h1 {
   order: 1;
   position: sticky;
-  color: rgb(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.5);
   font-family: sans-serif;
   margin: 1rem 0 0 0;
   padding: 0;
@@ -40,7 +40,7 @@ body.design {
 }
 .design__heading h4 {
   position: relative;
-  color: rgb(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.5);
   font-family: sans-serif;
   text-align: center;
   margin: auto;
@@ -283,13 +283,27 @@ body.design {
 }
 
 .slideshow__controls {
-  display: flex;
+  position: absolute;
+  top: 30vh;
+  width: 80%;
+  display: block;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+#prev,
+#next {
+  width: 10%;
+  height: auto;
+}
+
+#prev {
+  margin: 0 77% 0 1%;
 }
 
 .slideshow__controls :hover {
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.555);
+  border-radius: 10%;
 }
 
 .design__img--carousel {
@@ -333,11 +347,6 @@ body.design {
 .sticking h1,
 .sticking h4 {
   color: white;
-}
-
-#prev,
-#next {
-  height: 80px;
 }
 
 @media only screen and (max-width: 600px) {
