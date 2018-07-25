@@ -88,7 +88,12 @@ $(window).scroll(function() {
 
 var vids = {
     commercials: [],
-    film: [],
+    film: [
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/Jkai9C3G4_c?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', 
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/5cybCrOCp8M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', 
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/vI6RnogzKVM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+
+    ],
 
 }
 
