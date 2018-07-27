@@ -238,36 +238,6 @@ h3
     display: none;
 }
 
-/* Film Reel */
-
-.filmReel
-{
-    z-index: 2;
-    position: fixed;
-    top: 12em;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-.fixedReel
-{
-    position: fixed;
-    top: 12em;
-}
-.videoScroll
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, .3);
-}
-/* .initVid
-{
-    display: none;
-} */
 .video
 {
     box-sizing: border-box;
@@ -276,30 +246,6 @@ h3
     padding: 0;
     border: 1px solid red;
     background-color: rgba(255, 255, 255, .5);
-}
-.filmStripContainer
-{
-    z-index: 3;
-    background-color: transparent;
-    border-style: solid;
-    border-color: black;
-    border-width: 14px 0;
-    padding: 0;
-    margin: 0;
-    height: fill;
-    width: 100%;
-
-}
-.filmStripDashed
-{
-    z-index: 3;
-
-    background-color: transparent;
-    border-style: dashed solid;
-    border-color: black;
-    border-width: 14px 0;
-    padding: 0;
-    margin: 0;
 }
 .vidContainer
 {
@@ -493,33 +439,11 @@ h3
     {
         display: inline;
     }
-    .filmReel
-    {
-        position: absolute;
-        top: 492px;
-        height: 10em;
-        /* background-size: contain; */
-    }
-    .fixedReel
-    {
-        position: fixed;
-        top: 6em;
-    }
-    .videoScroll
-    {
-
-    }
     .video
     {
         width: auto;
         margin: 0 auto;
         padding: 0;
-    }
-    .filmStripDashed
-    {
-        margin: 0;
-        padding: 0;
-        border-width: 10px 0;
     }
     .vidContainer
     {
@@ -554,11 +478,6 @@ h3
         border-left: 3.8em solid rgba(255, 255, 255, 1);
     }
 
-    .dashedTest
-    {
-        border-width: 10px 2px;
-
-    }
 
 }
     
