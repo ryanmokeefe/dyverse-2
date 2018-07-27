@@ -4,7 +4,7 @@
 body
 {
     box-sizing: border-box;
-    max-width: 90%;
+    /* max-width: 90%; */
     background-image: url("../img/nightsky.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ body
 {
     width: 100vw;
     /* height: 30em; */
-    height: 70vh;
+    height: 50vh;
     margin: 0 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,6 +33,7 @@ h1
     position: fixed;
     top: 0;
     margin-top: 0;
+    font-weight: bold;
 }
 .h1-bgcolor
 {
