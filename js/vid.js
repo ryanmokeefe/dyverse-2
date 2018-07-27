@@ -1,3 +1,26 @@
+$(window).scroll(function() {
+    var h1 = $("h1");
+    if ($(window).scrollTop() >= 2)
+    {
+        h1.addClass("h1-bgcolor");
+    } else 
+    {
+        h1.removeClass("h1-bgcolor");
+    }
+});
+
+// // Materialize Carousel:
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
+
+  $('.carousel').carousel({
+    dist: 0,
+    padding: 100,
+  });
+
+
 // // Popout Video:
 
 var w = $(window).width();
@@ -56,23 +79,23 @@ var clearPopout = () => {
 
 // Fix Film Reel to top on scroll:
 
-var reel = $(".filmReel");
-var reelPos = reel.offset();
-$(window).resize(function() {
-    reelPos = reel.offset();
+// var reel = $(".filmReel");
+// var reelPos = reel.offset();
+// $(window).resize(function() {
+//     reelPos = reel.offset();
 
-});
+// });
 
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() >= (reelPos.top - 100))
-    {
-        reel.addClass("fixedReel");
-    } else 
-    {
-        reel.removeClass("fixedReel");
-    }
-});
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() >= (reelPos.top - 100))
+//     {
+//         reel.addClass("fixedReel");
+//     } else 
+//     {
+//         reel.removeClass("fixedReel");
+//     }
+// });
 
 
 
