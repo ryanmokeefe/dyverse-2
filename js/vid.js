@@ -1,6 +1,6 @@
 $(window).scroll(function() {
     var h1 = $("h1");
-    if ($(window).scrollTop() >= 2)
+    if ($(window).scrollTop() >= 200)
     {
         h1.addClass("h1-bgcolor");
     } else 
@@ -9,18 +9,30 @@ $(window).scroll(function() {
     }
 });
 
-// // Materialize Carousel:
+// // Carousel:
 
 $(document).ready(function(){
     $('.carousel').carousel();
-  });
+});
 
-  $('.carousel').carousel({
+$('.carousel').carousel({
     dist: 0,
-    padding: 100,
+    padding: 20,
     indicators: true
-  });
+});
 
+
+$('.nextButton').click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).parent().carousel('next');
+});
+
+$('.previousButton').click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).parent().carousel('prev');
+});
 
 // // Popout Video:
 
@@ -48,9 +60,6 @@ videos.click(function() {
     popout.style.display = "flex";
     video.play();
 });
-
-
-// Exit when clicked or esc is pressed
 
 var exit = $(".exit-popout");
 
@@ -96,36 +105,6 @@ var vids = {
 
 }
 
-function createVids() {
 
-    var filmReelContainer = $("#filmReel");
-    var vid = $(".video").width();
-    
-    var windowWidth = $(window).width();
-
-    var vidAmount;
-
-    if (windowWidth < 1080)
-    {
-        vidAmount = Math.ceil(windowWidth / vid);
-    } else 
-    {
-        vidAmount = Math.floor(windowWidth / vid);
-    }
-
-    for (i = 1; i < vidAmount; i++)
-    {
-        var div = $("<div>");
-        div.addClass("video");
-        filmReelContainer.append(div);
-    }
-
-}
-
-// createVidDivs();
-
-// $(window).resize(function() {
-//     createVidDivs();
-// });
 
 

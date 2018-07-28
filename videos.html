@@ -4,13 +4,14 @@
 
 <head>
   <meta charset="utf-8">
+  
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/videos.css" type="text/css">
-  
-   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -33,21 +34,18 @@
   <div class="heading">
     <h1> Video Production</h1>
     <h3>About Video Bluuuuuuuuurb bluuuuuuuuuuuuuuuuuuuuuuurb</h3>
-    <!-- <button class="browse">BROWSE</button> -->
   </div>
-  
-
-
-
 
 <!-- Videos -->
-<div class="flex videoBody">
+<div class="flex videoBody" id="browse">
   
-    <h2 class="categories">CATEGORIES</h2>
+    <h2 class="categories">Music Videos</h2>
 
     <div class="carousel">
-        <h4>Music Videos</h4>
              
+        <div class="previousButton "></div>
+        <div class="nextButton "></div>
+
         <video class="carousel-item video" width="422" height="240">
             <source src="video/3647543-preview.mp4" type="video/mp4" />
             <source src="video/3647543-preview.webmhd.webm" type="video/webm" />
@@ -98,10 +96,16 @@
           
     </div> 
 
-    
+
+
+    <h2 class="categories">Commercials</h2>
+
+
     <div class="carousel">
-        <h4>Commercials</h4>
-             
+
+      <div class="previousButton "></div>
+      <div class="nextButton "></div>
+
         <video class="carousel-item video" width="422" height="240">
             <source src="video/3647543-preview.mp4" type="video/mp4" />
             <source src="video/3647543-preview.webmhd.webm" type="video/webm" />
@@ -228,16 +232,10 @@
         <span></span>
     </div>
     <video width="846" height="480" controls>
-        <!-- <source src="" type="video/mp4" />
-        <source src="" type="video/webm" /> -->
+       
         Your browser does not support the video tag.
     </video>
 </div>
-
-
-
-
-
 
 
 
