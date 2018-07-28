@@ -75,31 +75,6 @@ var clearPopout = () => {
 
 
 
-            // Separate files for popout and vid scroll?
-
-
-// Fix Film Reel to top on scroll:
-
-// var reel = $(".filmReel");
-// var reelPos = reel.offset();
-// $(window).resize(function() {
-//     reelPos = reel.offset();
-
-// });
-
-
-// $(window).scroll(function() {
-//     if ($(window).scrollTop() >= (reelPos.top - 100))
-//     {
-//         reel.addClass("fixedReel");
-//     } else 
-//     {
-//         reel.removeClass("fixedReel");
-//     }
-// });
-
-
-
 
 // Create array of vids on page
 
